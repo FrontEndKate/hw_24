@@ -8,6 +8,8 @@
 </head>
 <body>
 <div id="exchange">
+    <h2>Currency Converter</h2>
+    <p>Convert currencies quickly and easily</p>
     <div>
         <form action="#" id="reg_form">
             <div class="autocomplete">
@@ -18,8 +20,8 @@
                 <input type="text" name="to" id="currency_to" placeholder="Enter currency to">
                 <div id="autocomplete_to_list" class="autocomplete-items"></div>
             </div>
-            <input type="text" name="amount" placeholder="Amount">
-            <button type="submit">Calculate</button>
+            <input type="number" name="amount" placeholder="Enter amount" min="0.01" step="0.01">
+            <button type="submit" class="btn-calculate">Calculate</button>
         </form>
 
     </div>

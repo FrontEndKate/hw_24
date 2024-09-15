@@ -1,15 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-#exchange{
-    margin-top: 120px;
+#exchange {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+#result_text {
+    display: none;
+    margin-top: 20px;
 }
 
 
-#result_text{
-    display:  none;
+input {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.5);
+}
+
+.btn-calculate {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-calculate:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .autocomplete {
@@ -22,6 +86,8 @@
     border: 1px solid #d4d4d4;
     border-bottom: none;
     z-index: 99;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .autocomplete-items div {
@@ -33,4 +99,11 @@
 
 .autocomplete-items div:hover {
     background-color: rgba(0, 123, 255, 0.58);
+}
+
+#result_text {
+    color: #007bff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
 }
