@@ -17,7 +17,6 @@ class FormHandler {
                     let value = element.value;// latte   | large
                     let checked = element.checked
                     let type = element.type
-                    // const {name, value, checked, type} = element;
                     if(type !== "radio")
                         objData[name] = value;
                     else if(checked)
